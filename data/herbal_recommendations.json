@@ -1,0 +1,32 @@
+{
+  "headache": {
+    "recommendation": "Try brewing fresh feverfew tea or peppermint tea. Lavender essential oil applied to temples may also help reduce tension. Stay hydrated and rest in a quiet, dark room.",
+    "herbs": ["Feverfew", "Peppermint", "Lavender"],
+    "image": "https://images.pexels.com/photos/1493008/pexels-photo-1493008.jpeg"
+  },
+  "anxiety": {
+    "recommendation": "Chamomile tea can help calm nerves. Passionflower and lemon balm are also known for their calming properties. Try these herbs as a tea before bedtime.",
+    "herbs": ["Chamomile", "Passionflower", "Lemon Balm"],
+    "image": "https://images.pexels.com/photos/1793035/pexels-photo-1793035.jpeg"
+  },
+  "common_cold": {
+    "recommendation": "Echinacea can boost immune function. Elder berry and ginger tea with honey can help soothe symptoms. Add a slice of lemon for vitamin C.",
+    "herbs": ["Echinacea", "Elder Berry", "Ginger"],
+    "image": "https://images.pexels.com/photos/5858165/pexels-photo-5858165.jpeg"
+  },
+  "digestive_issues": {
+    "recommendation": "Peppermint tea aids digestion. Ginger can help with nausea. Fennel seeds can reduce bloating. Try these individually or make a digestive tea blend.",
+    "herbs": ["Peppermint", "Ginger", "Fennel"],
+    "image": "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg"
+  },
+  "insomnia": {
+    "recommendation": "Valerian root is known to improve sleep. Combine with chamomile and lavender tea before bedtime. Avoid screens for an hour before sleep.",
+    "herbs": ["Valerian Root", "Chamomile", "Lavender"],
+    "image": "https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg"
+  },
+  "stress": {
+    "recommendation": "Holy basil (Tulsi) is an adaptogenic herb that helps manage stress. Ashwagandha and Rhodiola can also help balance stress responses.",
+    "herbs": ["Holy Basil", "Ashwagandha", "Rhodiola"],
+    "image": "https://images.pexels.com/photos/1028599/pexels-photo-1028599.jpeg"
+  }
+}

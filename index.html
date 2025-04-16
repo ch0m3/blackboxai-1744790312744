@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerbalGPT - Natural Remedy Assistant</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: '#2C5F2D',
+                        sage: '#97BC62',
+                        sand: '#FFE1A8',
+                        paper: '#F9F9F1',
+                        deepForest: '#234223'
+                    },
+                    fontFamily: {
+                        playfair: ['"Playfair Display"', 'serif'],
+                        opensans: ['"Open Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-paper min-h-screen">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-sm border-b border-sage/20 fixed top-0 w-full z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-leaf text-forest text-2xl"></i>
+                <h1 class="text-2xl font-playfair text-forest">HerbalGPT</h1>
+            </div>
+            <div class="space-x-4">
+                <button class="px-4 py-2 text-forest hover:text-sage transition-colors">Log in</button>
+                <button class="px-4 py-2 bg-forest text-white rounded-lg hover:bg-sage transition-colors">Sign up</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-24 pb-32">
+        <div class="max-w-4xl mx-auto">
+            <!-- Welcome Section -->
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-playfair text-forest mb-4">What ailment can I help you with today?</h2>
+                <p class="text-deepForest/70 font-opensans">Get personalized herbal recommendations for minor ailments</p>
+            </div>
+
+            <!-- Chat Interface -->
+            <div class="bg-white rounded-xl shadow-lg p-4 mb-4">
+                <div id="chat-messages" class="space-y-4 mb-4 h-[400px] overflow-y-auto p-4">
+                    <!-- Initial Message -->
+                    <div class="bg-sage/10 p-4 rounded-lg">
+                        <p class="text-deepForest font-opensans">
+                            Welcome to HerbalGPT! I can provide natural herbal remedy suggestions for common ailments. 
+                            Try asking about:
+                        </p>
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <button class="ailment-btn px-3 py-1 bg-forest/10 hover:bg-forest/20 rounded-full text-sm text-forest transition-colors">Headache</button>
+                            <button class="ailment-btn px-3 py-1 bg-forest/10 hover:bg-forest/20 rounded-full text-sm text-forest transition-colors">Anxiety</button>
+                            <button class="ailment-btn px-3 py-1 bg-forest/10 hover:bg-forest/20 rounded-full text-sm text-forest transition-colors">Common Cold</button>
+                            <button class="ailment-btn px-3 py-1 bg-forest/10 hover:bg-forest/20 rounded-full text-sm text-forest transition-colors">Digestive Issues</button>
+                            <button class="ailment-btn px-3 py-1 bg-forest/10 hover:bg-forest/20 rounded-full text-sm text-forest transition-colors">Insomnia</button>
+                            <button class="ailment-btn px-3 py-1 bg-forest/10 hover:bg-forest/20 rounded-full text-sm text-forest transition-colors">Stress</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input Area -->
+                <div class="border-t border-sage/20 pt-4">
+                    <form id="chat-form" class="flex gap-4 items-center">
+                        <div class="flex-1 relative">
+                            <input type="text" 
+                                   id="user-input" 
+                                   class="w-full px-4 py-3 rounded-lg border border-sage focus:outline-none focus:border-forest transition-colors" 
+                                   placeholder="Describe your ailment...">
+                        </div>
+                        <button type="submit" 
+                                class="px-6 py-3 bg-forest text-white rounded-lg hover:bg-sage transition-colors flex items-center gap-2">
+                            <span>Send</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="text-center text-sm text-deepForest/60">
+                <p class="mb-2">Note: These are general herbal recommendations. Please consult a healthcare professional for serious conditions.</p>
+                <p>By using HerbalGPT, you agree to our <a href="#" class="text-forest hover:text-sage">Terms</a> and 
+                   <a href="#" class="text-forest hover:text-sage">Privacy Policy</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

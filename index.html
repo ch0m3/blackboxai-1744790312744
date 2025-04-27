@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HerbalGPT - Natural Remedy Assistant</title>
+    <title>Herbal Remedies Expert System - Natural Remedy Assistant</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -40,9 +40,13 @@
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fas fa-leaf text-forest text-2xl"></i>
-                <h1 class="text-2xl font-playfair text-forest">HerbalGPT</h1>
+                <h1 class="text-xl font-playfair text-forest leading-tight">HERBAL REMEDIES<br>EXPERT SYSTEM<br>FOR MINOR AILMENTS</h1>
             </div>
-            <div class="space-x-4">
+            <div class="flex items-center space-x-4">
+                <button id="contribute-btn" class="px-4 py-2 bg-sage text-forest rounded-lg hover:bg-sage/80 transition-colors flex items-center gap-2">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Share Knowledge</span>
+                </button>
                 <button class="px-4 py-2 text-forest hover:text-sage transition-colors">Log in</button>
                 <button class="px-4 py-2 bg-forest text-white rounded-lg hover:bg-sage transition-colors">Sign up</button>
             </div>
@@ -50,7 +54,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 pt-24 pb-32">
+    <main class="container mx-auto px-4 pt-32 pb-32">
         <div class="max-w-4xl mx-auto">
             <!-- Welcome Section -->
             <div class="text-center mb-8">
@@ -64,7 +68,7 @@
                     <!-- Initial Message -->
                     <div class="bg-sage/10 p-4 rounded-lg">
                         <p class="text-deepForest font-opensans">
-                            Welcome to HerbalGPT! I can provide natural herbal remedy suggestions for common ailments. 
+                            Welcome to the Herbal Remedies Expert System! I can provide natural herbal remedy suggestions for common ailments. 
                             Try asking about:
                         </p>
                         <div class="mt-3 flex flex-wrap gap-2">
@@ -75,6 +79,10 @@
                             <button class="ailment-btn px-3 py-1 bg-forest/10 hover:bg-forest/20 rounded-full text-sm text-forest transition-colors">Insomnia</button>
                             <button class="ailment-btn px-3 py-1 bg-forest/10 hover:bg-forest/20 rounded-full text-sm text-forest transition-colors">Stress</button>
                         </div>
+                        <p class="mt-4 text-sm text-deepForest/70">
+                            <i class="fas fa-lightbulb text-forest"></i>
+                            Know a remedy? Click "Share Knowledge" to contribute to our growing database of herbal remedies!
+                        </p>
                     </div>
                 </div>
 
@@ -99,12 +107,15 @@
             <!-- Disclaimer -->
             <div class="text-center text-sm text-deepForest/60">
                 <p class="mb-2">Note: These are general herbal recommendations. Please consult a healthcare professional for serious conditions.</p>
-                <p>By using HerbalGPT, you agree to our <a href="#" class="text-forest hover:text-sage">Terms</a> and 
+                <p>By using Herbal Remedies Expert System, you agree to our <a href="#" class="text-forest hover:text-sage">Terms</a> and 
                    <a href="#" class="text-forest hover:text-sage">Privacy Policy</a></p>
+                <p class="mt-2">
+                    <i class="fas fa-shield-alt text-forest"></i>
+                    All user contributions are reviewed by our team of herbal experts before being added to the database.
+                </p>
             </div>
         </div>
     </main>
 
     <script src="js/script.js"></script>
 </body>
-</html>
